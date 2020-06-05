@@ -101,7 +101,7 @@ namespace CP
             }
             panel1.Refresh();
             counter++;
-            Thread.Sleep(TimeSpan.FromSeconds(2));
+            Thread.Sleep(TimeSpan.FromSeconds(1));
 
             if (counter == 5)
             {
