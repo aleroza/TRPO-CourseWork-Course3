@@ -53,7 +53,7 @@
             this.exitBtn.Location = new System.Drawing.Point(112, 117);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(103, 33);
-            this.exitBtn.TabIndex = 1;
+            this.exitBtn.TabIndex = 4;
             this.exitBtn.Text = "Выход";
             this.exitBtn.UseVisualStyleBackColor = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
@@ -63,7 +63,7 @@
             this.backBtn.Location = new System.Drawing.Point(3, 117);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(103, 33);
-            this.backBtn.TabIndex = 2;
+            this.backBtn.TabIndex = 3;
             this.backBtn.Text = "<— Назад";
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
@@ -104,7 +104,7 @@
             this.kanaBtn.Location = new System.Drawing.Point(3, 42);
             this.kanaBtn.Name = "kanaBtn";
             this.kanaBtn.Size = new System.Drawing.Size(212, 33);
-            this.kanaBtn.TabIndex = 6;
+            this.kanaBtn.TabIndex = 1;
             this.kanaBtn.Text = "Проверить знание Каны";
             this.kanaBtn.UseVisualStyleBackColor = true;
             this.kanaBtn.Click += new System.EventHandler(this.kanaBtn_Click);
@@ -126,7 +126,7 @@
             this.partBtn.Location = new System.Drawing.Point(3, 78);
             this.partBtn.Name = "partBtn";
             this.partBtn.Size = new System.Drawing.Size(212, 33);
-            this.partBtn.TabIndex = 8;
+            this.partBtn.TabIndex = 2;
             this.partBtn.Text = "Проверить знание частиц";
             this.partBtn.UseVisualStyleBackColor = true;
             this.partBtn.Click += new System.EventHandler(this.partBtn_Click);
@@ -136,7 +136,7 @@
             this.lessonBtn.Location = new System.Drawing.Point(3, 3);
             this.lessonBtn.Name = "lessonBtn";
             this.lessonBtn.Size = new System.Drawing.Size(212, 33);
-            this.lessonBtn.TabIndex = 7;
+            this.lessonBtn.TabIndex = 0;
             this.lessonBtn.Text = "Выбрать урок...";
             this.lessonBtn.UseVisualStyleBackColor = true;
             this.lessonBtn.Click += new System.EventHandler(this.lessonBtn_Click);

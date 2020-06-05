@@ -25,14 +25,50 @@ namespace CP
 
         private void hiraBtn_Click(object sender, EventArgs e)
         {
-            mode = "hiragana/";
-            MainQuiz();
+            if (mode != null)
+            {
+                DialogResult result = MessageBox.Show(
+                "Вы уверены?",
+                "Смена теста",
+                MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    mode = "hiragana/";
+                    MainQuiz();
+                }
+                else
+                    this.TopMost = true;
+            }
+            else
+            {
+                mode = "hiragana/";
+                MainQuiz();
+            }
         }
 
         private void kataBtn_Click(object sender, EventArgs e)
         {
-            mode = "katakana/";
-            MainQuiz();
+            if (mode != null)
+            {
+                DialogResult result = MessageBox.Show(
+                "Вы уверены?",
+                "Смена теста",
+                MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    mode = "katakana/";
+                    MainQuiz();
+                }
+                else
+                    this.TopMost = true;
+            }
+            else
+            {
+                mode = "katakana/";
+                MainQuiz();
+            }
         }
 
         private int counter;
@@ -93,10 +129,11 @@ namespace CP
             }
             else
             {
-                foreach (Button btn in panel1.Controls.OfType<Button>())
-                {
-                    if (btn.Text.ToLower() == quiz[counter][0]) btn.BackColor = Color.Green;
-                }
+                (Controls[$"{quiz[counter][0]}"]).BackColor = Color.Green;
+                //foreach (Button btn in panel1.Controls.OfType<Button>())
+                //{
+                //    if (btn.Text.ToLower() == quiz[counter][0]) btn.BackColor = Color.Green;
+                //}
                 (sender as Button).BackColor = Color.Red;
             }
             panel1.Refresh();

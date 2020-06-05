@@ -45,7 +45,6 @@
             this.passwd2Panel = new System.Windows.Forms.Panel();
             this.backBtn = new System.Windows.Forms.Button();
             this.loginPanel = new System.Windows.Forms.Panel();
-            this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.userLoginPanel.SuspendLayout();
             this.logpasPanel.SuspendLayout();
             this.passwd2Panel.SuspendLayout();
@@ -67,7 +66,7 @@
             this.userBtn.Location = new System.Drawing.Point(15, 28);
             this.userBtn.Name = "userBtn";
             this.userBtn.Size = new System.Drawing.Size(102, 35);
-            this.userBtn.TabIndex = 1;
+            this.userBtn.TabIndex = 2;
             this.userBtn.Text = "Пользователь";
             this.userBtn.UseVisualStyleBackColor = true;
             this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
@@ -77,7 +76,7 @@
             this.adminBtn.Location = new System.Drawing.Point(123, 28);
             this.adminBtn.Name = "adminBtn";
             this.adminBtn.Size = new System.Drawing.Size(102, 35);
-            this.adminBtn.TabIndex = 2;
+            this.adminBtn.TabIndex = 3;
             this.adminBtn.Text = "Администратор";
             this.adminBtn.UseVisualStyleBackColor = true;
             this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
@@ -87,7 +86,7 @@
             this.loginBtn.Location = new System.Drawing.Point(211, 42);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(84, 28);
-            this.loginBtn.TabIndex = 0;
+            this.loginBtn.TabIndex = 9;
             this.loginBtn.Text = "Вход...";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
@@ -98,7 +97,7 @@
             this.loginRadio.Location = new System.Drawing.Point(3, 14);
             this.loginRadio.Name = "loginRadio";
             this.loginRadio.Size = new System.Drawing.Size(101, 17);
-            this.loginRadio.TabIndex = 1;
+            this.loginRadio.TabIndex = 4;
             this.loginRadio.TabStop = true;
             this.loginRadio.Text = "Вход в аккаунт";
             this.loginRadio.UseVisualStyleBackColor = true;
@@ -110,7 +109,7 @@
             this.registerRadio.Location = new System.Drawing.Point(3, 57);
             this.registerRadio.Name = "registerRadio";
             this.registerRadio.Size = new System.Drawing.Size(90, 17);
-            this.registerRadio.TabIndex = 2;
+            this.registerRadio.TabIndex = 5;
             this.registerRadio.TabStop = true;
             this.registerRadio.Text = "Регистрация";
             this.registerRadio.UseVisualStyleBackColor = true;
@@ -162,7 +161,7 @@
             this.loginTextBox.MaxLength = 64;
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(100, 20);
-            this.loginTextBox.TabIndex = 3;
+            this.loginTextBox.TabIndex = 6;
             // 
             // passwdTextBox
             // 
@@ -171,7 +170,7 @@
             this.passwdTextBox.Name = "passwdTextBox";
             this.passwdTextBox.PasswordChar = '*';
             this.passwdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.passwdTextBox.TabIndex = 6;
+            this.passwdTextBox.TabIndex = 7;
             // 
             // passwd2TextBox
             // 
@@ -180,7 +179,7 @@
             this.passwd2TextBox.Name = "passwd2TextBox";
             this.passwd2TextBox.PasswordChar = '*';
             this.passwd2TextBox.Size = new System.Drawing.Size(100, 20);
-            this.passwd2TextBox.TabIndex = 7;
+            this.passwd2TextBox.TabIndex = 8;
             // 
             // logpasPanel
             // 
@@ -210,7 +209,7 @@
             this.backBtn.Location = new System.Drawing.Point(384, 6);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(75, 23);
-            this.backBtn.TabIndex = 4;
+            this.backBtn.TabIndex = 1;
             this.backBtn.Text = "<— Назад";
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
@@ -225,10 +224,6 @@
             this.loginPanel.Size = new System.Drawing.Size(447, 136);
             this.loginPanel.TabIndex = 3;
             this.loginPanel.Visible = false;
-            // 
-            // ofd
-            // 
-            this.ofd.InitialDirectory = "../";
             // 
             // LoginForm
             // 
@@ -273,6 +268,5 @@
         private System.Windows.Forms.Panel logpasPanel;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Panel loginPanel;
-        private System.Windows.Forms.OpenFileDialog ofd;
     }
 }

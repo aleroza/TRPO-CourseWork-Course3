@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CP.Main;
+using System;
 using System.Data.SQLite;
 using System.IO;
 using System.Windows.Forms;
@@ -104,6 +105,7 @@ namespace CP
 
         private void partBtn_Click(object sender, EventArgs e)
         {
+            new PartForm().Show();
         }
 
         private void kanaBtn_Click(object sender, EventArgs e)

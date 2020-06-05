@@ -85,6 +85,12 @@
     <Compile Include="Main\LessonChooser.Designer.cs">
       <DependentUpon>LessonChooser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\PartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\PartForm.Designer.cs">
+      <DependentUpon>PartForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\PartForm.resx">
+      <DependentUpon>PartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\TitleForm.resx">
       <DependentUpon>TitleForm.cs</DependentUpon>
