@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CP
@@ -10,26 +11,16 @@ namespace CP
             InitializeComponent();
         }
 
-        private void exitBtn_Click(object sender, EventArgs e)
+        private void Start()
         {
-            DialogResult result = MessageBox.Show(
-                "Вы уверены?",
-                "Завершение работы...",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Stop,
-                MessageBoxDefaultButton.Button1,
-                MessageBoxOptions.DefaultDesktopOnly);
-
-            if (result == DialogResult.Yes)
-                Application.Exit();
-            else
-                this.TopMost = true;
-        }
-
-        private void enterBtn_Click(object sender, EventArgs e)
-        {
+            Thread.Sleep(TimeSpan.FromSeconds(2));
             new LoginForm().Show();
             this.Hide();
+        }
+
+        private void TitleForm_Shown(object sender, EventArgs e)
+        {
+            Start();
         }
     }
 }

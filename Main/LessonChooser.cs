@@ -76,7 +76,7 @@ namespace CP
             while (rdrCh.Read())
             {
                 if (rdrCh.IsDBNull(3)) continue;
-                chapters.Add(new List<string> { $"{rdrCh.GetInt32(1)}", $"{rdrCh.GetString(3)}", $"{rdrCh.GetString(4)}" });
+                chapters.Add(new List<string> { $"{rdrCh.GetInt32(1)}", $"{rdrCh.GetString(2)}", $"{rdrCh.GetString(3)}" });
             }
             int n = 0;
             foreach (string nameGr in groups)

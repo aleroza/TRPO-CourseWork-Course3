@@ -59,5 +59,25 @@ namespace CP.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon ic_launcher {
+            get {
+                object obj = ResourceManager.GetObject("ic_launcher", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NotoSansJP_Regular {
+            get {
+                object obj = ResourceManager.GetObject("NotoSansJP_Regular", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

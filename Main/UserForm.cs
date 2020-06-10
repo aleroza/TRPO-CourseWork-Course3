@@ -36,9 +36,9 @@ namespace CP
             SQLiteDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                if (!rdr.IsDBNull(0)) hiraLabel.Text = $"Тест по хирагане — {rdr.GetString(0)}";
-                if (!rdr.IsDBNull(1)) kataLabel.Text = $"Тест по катакане — {rdr.GetString(1)}";
-                if (!rdr.IsDBNull(2)) partLabel.Text = $"Тест по чacтицам — {rdr.GetString(2)}";
+                if (!rdr.IsDBNull(0)) hiraLabel.Text = $"Тест по хирагане — {rdr.GetInt32(0)} из 5";
+                if (!rdr.IsDBNull(1)) kataLabel.Text = $"Тест по катакане — {rdr.GetInt32(1)} из 5";
+                if (!rdr.IsDBNull(2)) partLabel.Text = $"Тест по чacтицам — {rdr.GetInt32(2)} из 3";
             }
         }
 
@@ -64,7 +64,7 @@ namespace CP
             conn = new SQLiteConnection(string.Concat("Data Source=", filepath));
             conn.Open();
 
-            string stm = $"UPDATE auth SET {mode}='{result}' WHERE login='{SessionLogin}'";
+            string stm = $"UPDATE auth SET {mode}={result} WHERE login='{SessionLogin}'";
             var cmd = new SQLiteCommand(stm, conn);
             cmd.ExecuteNonQuery();
             LoadMarks();
@@ -105,7 +105,7 @@ namespace CP
 
         private void partBtn_Click(object sender, EventArgs e)
         {
-            new PartForm().Show();
+            new PartForm(new SetResultDel(SetMarks)).Show();
         }
 
         private void kanaBtn_Click(object sender, EventArgs e)

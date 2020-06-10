@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.textLabel = new System.Windows.Forms.Label();
             this.userBtn = new System.Windows.Forms.Button();
             this.adminBtn = new System.Windows.Forms.Button();
@@ -43,7 +44,7 @@
             this.passwd2TextBox = new System.Windows.Forms.TextBox();
             this.logpasPanel = new System.Windows.Forms.Panel();
             this.passwd2Panel = new System.Windows.Forms.Panel();
-            this.backBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.loginPanel = new System.Windows.Forms.Panel();
             this.userLoginPanel.SuspendLayout();
             this.logpasPanel.SuspendLayout();
@@ -204,15 +205,15 @@
             this.passwd2Panel.TabIndex = 7;
             this.passwd2Panel.Visible = false;
             // 
-            // backBtn
+            // exitBtn
             // 
-            this.backBtn.Location = new System.Drawing.Point(384, 6);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(75, 23);
-            this.backBtn.TabIndex = 1;
-            this.backBtn.Text = "<— Назад";
-            this.backBtn.UseVisualStyleBackColor = true;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.exitBtn.Location = new System.Drawing.Point(384, 6);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(75, 23);
+            this.exitBtn.TabIndex = 1;
+            this.exitBtn.Text = "Выход";
+            this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // loginPanel
             // 
@@ -231,10 +232,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 209);
             this.Controls.Add(this.loginPanel);
-            this.Controls.Add(this.backBtn);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.adminBtn);
             this.Controls.Add(this.userBtn);
             this.Controls.Add(this.textLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.Text = "Вход...";
             this.userLoginPanel.ResumeLayout(false);
@@ -266,7 +268,7 @@
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Panel passwd2Panel;
         private System.Windows.Forms.Panel logpasPanel;
-        private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Panel loginPanel;
     }
 }

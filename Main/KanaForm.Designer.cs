@@ -143,6 +143,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.kataBtn);
             this.Controls.Add(this.hiraBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KanaForm";
             this.Text = "Проверка на знание каны";
             this.panel1.ResumeLayout(false);

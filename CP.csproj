@@ -36,6 +36,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
@@ -72,6 +79,18 @@
     </Compile>
     <Compile Include="Main\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\LessonDBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\LessonDBForm.Designer.cs">
+      <DependentUpon>LessonDBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UserDBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\UserDBForm.Designer.cs">
+      <DependentUpon>UserDBForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\KanaForm.cs">
       <SubType>Form</SubType>
@@ -119,6 +138,12 @@
     <EmbeddedResource Include="Main\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\LessonDBForm.resx">
+      <DependentUpon>LessonDBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UserDBForm.resx">
+      <DependentUpon>UserDBForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\KanaForm.resx">
       <DependentUpon>KanaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +169,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Main\packages.config" />
+    <None Include="Resources\NotoSansJP-Regular.otf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -434,6 +460,7 @@
     <Content Include="images\katakana\yu.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\ic_launcher.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -442,9 +469,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

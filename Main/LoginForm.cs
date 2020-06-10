@@ -46,10 +46,20 @@ namespace CP
             passwd2Panel.Visible = true;
         }
 
-        private void backBtn_Click(object sender, EventArgs e)
+        private void exitBtn_Click(object sender, EventArgs e)
         {
-            new TitleForm().Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show(
+    "Вы уверены?",
+    "Завершение работы...",
+    MessageBoxButtons.YesNo,
+    MessageBoxIcon.Stop,
+    MessageBoxDefaultButton.Button1,
+    MessageBoxOptions.DefaultDesktopOnly);
+
+            if (result == DialogResult.Yes)
+                Application.Exit();
+            else
+                this.TopMost = true;
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -104,8 +114,8 @@ namespace CP
             SQLiteDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                Login = $"{rdr.GetString(0)}";
-                Passwd = $"{rdr.GetString(1)}";
+                Login = $"{rdr.GetString(1)}";
+                Passwd = $"{rdr.GetString(2)}";
                 //Console.WriteLine($"{Login} {Passwd}");
                 if (loginTextBox.Text == Login && passwdTextBox.Text == Passwd)
                 {
@@ -131,7 +141,7 @@ namespace CP
             SQLiteDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                Login = $"{rdr.GetString(0)}";
+                Login = $"{rdr.GetString(1)}";
                 Console.WriteLine($"{Login}");
                 if (loginTextBox.Text == Login)
                 {
@@ -153,7 +163,7 @@ namespace CP
                 loginTextBox.Text = "";
                 passwdTextBox.Text = "";
                 passwd2TextBox.Text = "";
-                MessageBox.Show("Поля yне заполнены или пароли не совпадают.", "Ошибка!");
+                MessageBox.Show("Поля не заполнены или пароли не совпадают.", "Ошибка!");
                 return false;
             }
             cmd.CommandText = $"INSERT INTO auth(login, password) VALUES('{loginTextBox.Text}','{passwdTextBox.Text}')";

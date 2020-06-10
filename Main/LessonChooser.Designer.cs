@@ -50,6 +50,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LessonChooser";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Выберите урок...";
             this.Load += new System.EventHandler(this.LessonChooser_Load);
             this.ResumeLayout(false);

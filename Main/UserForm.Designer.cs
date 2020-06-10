@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.exitBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
             this.statusBar1 = new System.Windows.Forms.StatusBar();
@@ -146,6 +147,7 @@
             this.lessonBrowser.Location = new System.Drawing.Point(12, 12);
             this.lessonBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.lessonBrowser.Name = "lessonBrowser";
+            this.lessonBrowser.ScriptErrorsSuppressed = true;
             this.lessonBrowser.Size = new System.Drawing.Size(500, 284);
             this.lessonBrowser.TabIndex = 9;
             // 
@@ -187,6 +189,7 @@
             this.Controls.Add(this.lessonBrowser);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusBar1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserForm";
             this.Text = "Начальные уроки японского языка";
             this.Load += new System.EventHandler(this.UserForm_Load);
