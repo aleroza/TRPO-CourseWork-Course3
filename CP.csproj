@@ -74,94 +74,96 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminForm.Designer.cs">
-      <DependentUpon>AdminForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LessonDBForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LessonDBForm.Designer.cs">
-      <DependentUpon>LessonDBForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserDBForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDBForm.Designer.cs">
-      <DependentUpon>UserDBForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KanaForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KanaForm.Designer.cs">
-      <DependentUpon>KanaForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LessonChooser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LessonChooser.Designer.cs">
-      <DependentUpon>LessonChooser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PartForm.Designer.cs">
-      <DependentUpon>PartForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UserForm.cs">
+    <Compile Include="src\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserForm.Designer.cs">
-      <DependentUpon>UserForm.cs</DependentUpon>
+    <Compile Include="src\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\KanaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="src\KanaForm.Designer.cs">
+      <DependentUpon>KanaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\LessonChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\LessonChooser.Designer.cs">
+      <DependentUpon>LessonChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\LessonDBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\LessonDBForm.Designer.cs">
+      <DependentUpon>LessonDBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TitleForm.cs">
+    <Compile Include="src\PartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TitleForm.Designer.cs">
+    <Compile Include="src\PartForm.Designer.cs">
+      <DependentUpon>PartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\TitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\TitleForm.Designer.cs">
       <DependentUpon>TitleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminForm.resx">
+    <Compile Include="src\UserDBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\UserDBForm.Designer.cs">
+      <DependentUpon>UserDBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="src\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LessonDBForm.resx">
-      <DependentUpon>LessonDBForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserDBForm.resx">
-      <DependentUpon>UserDBForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KanaForm.resx">
+    <EmbeddedResource Include="src\KanaForm.resx">
       <DependentUpon>KanaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LessonChooser.resx">
+    <EmbeddedResource Include="src\LessonChooser.resx">
       <DependentUpon>LessonChooser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="src\LessonDBForm.resx">
+      <DependentUpon>LessonDBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PartForm.resx">
+    <EmbeddedResource Include="src\PartForm.resx">
       <DependentUpon>PartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TitleForm.resx">
+    <EmbeddedResource Include="src\TitleForm.resx">
       <DependentUpon>TitleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserForm.resx">
+    <EmbeddedResource Include="src\UserDBForm.resx">
+      <DependentUpon>UserDBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
     <None Include="auth.sqlite">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -169,6 +171,53 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="packages\EntityFramework.6.3.0\.signature.p7s" />
+    <None Include="packages\EntityFramework.6.3.0\buildTransitive\EntityFramework.props" />
+    <None Include="packages\EntityFramework.6.3.0\buildTransitive\EntityFramework.targets" />
+    <None Include="packages\EntityFramework.6.3.0\build\EntityFramework.props" />
+    <None Include="packages\EntityFramework.6.3.0\build\EntityFramework.targets" />
+    <None Include="packages\EntityFramework.6.3.0\content\net40\App.config.install.xdt" />
+    <None Include="packages\EntityFramework.6.3.0\content\net40\App.config.transform" />
+    <None Include="packages\EntityFramework.6.3.0\content\net40\Web.config.install.xdt" />
+    <None Include="packages\EntityFramework.6.3.0\content\net40\Web.config.transform" />
+    <None Include="packages\EntityFramework.6.3.0\EntityFramework.6.3.0.nupkg" />
+    <None Include="packages\EntityFramework.6.3.0\tools\EntityFramework6.PS2.psd1" />
+    <None Include="packages\EntityFramework.6.3.0\tools\EntityFramework6.PS2.psm1" />
+    <None Include="packages\EntityFramework.6.3.0\tools\EntityFramework6.psd1" />
+    <None Include="packages\EntityFramework.6.3.0\tools\EntityFramework6.psm1" />
+    <None Include="packages\EntityFramework.6.3.0\tools\init.ps1" />
+    <None Include="packages\EntityFramework.6.3.0\tools\install.ps1" />
+    <None Include="packages\EntityFramework.6.3.0\tools\netcoreapp3.0\any\ef6.runtimeconfig.json" />
+    <None Include="packages\SQLite.3.13.0\.signature.p7s" />
+    <None Include="packages\SQLite.3.13.0\build\net45\SQLite.props" />
+    <None Include="packages\SQLite.3.13.0\lib\netstandard1.0\_._" />
+    <None Include="packages\SQLite.3.13.0\runtimes\linux-x64\native\libsqlite3.so" />
+    <None Include="packages\SQLite.3.13.0\runtimes\osx-x64\native\libsqlite3.dylib" />
+    <None Include="packages\SQLite.3.13.0\SQLite.3.13.0.nupkg" />
+    <None Include="packages\System.Data.SQLite.1.0.112.2\.signature.p7s" />
+    <None Include="packages\System.Data.SQLite.1.0.112.2\System.Data.SQLite.1.0.112.2.nupkg" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\.signature.p7s" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\build\net20\System.Data.SQLite.Core.targets" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\build\net40\System.Data.SQLite.Core.targets" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\net20\System.Data.SQLite.dll.config" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\net40\System.Data.SQLite.dll.config" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\netstandard2.0\System.Data.SQLite.dll.config" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\netstandard2.1\System.Data.SQLite.dll.config" />
+    <None Include="packages\System.Data.SQLite.Core.1.0.112.2\System.Data.SQLite.Core.1.0.112.2.nupkg" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\.signature.p7s" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\content\net40\app.config.install.xdt" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\content\net40\app.config.transform" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\content\net40\web.config.install.xdt" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\content\net40\web.config.transform" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\System.Data.SQLite.EF6.1.0.112.2.nupkg" />
+    <None Include="packages\System.Data.SQLite.EF6.1.0.112.2\tools\net40\install.ps1" />
+    <None Include="packages\System.Data.SQLite.Linq.1.0.112.2\.signature.p7s" />
+    <None Include="packages\System.Data.SQLite.Linq.1.0.112.2\content\net20\app.config.transform" />
+    <None Include="packages\System.Data.SQLite.Linq.1.0.112.2\content\net20\web.config.transform" />
+    <None Include="packages\System.Data.SQLite.Linq.1.0.112.2\content\net40\app.config.transform" />
+    <None Include="packages\System.Data.SQLite.Linq.1.0.112.2\content\net40\web.config.transform" />
+    <None Include="packages\System.Data.SQLite.Linq.1.0.112.2\System.Data.SQLite.Linq.1.0.112.2.nupkg" />
+    <None Include="README.md" />
     <None Include="Resources\NotoSansJP-Regular.otf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,6 +228,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="~Data\assets\chapters.sqlite" />
+    <None Include="~Data\auth.sqlite" />
+    <None Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net20\System.Data.SQLite.Core.targets" />
+    <None Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net40\System.Data.SQLite.Core.targets" />
+    <None Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets" />
+    <None Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net45\System.Data.SQLite.Core.targets" />
+    <None Include="~Data\System.Data.SQLite.Core.1.0.96.0\System.Data.SQLite.Core.1.0.96.0.nupkg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -463,18 +519,304 @@
     <Content Include="images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="packages\EntityFramework.6.3.0\build\Microsoft.Data.Entity.Build.Tasks.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net40\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net40\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\netstandard2.1\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\netstandard2.1\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\netstandard2.1\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.3.0\lib\netstandard2.1\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\about_EntityFramework6.help.txt" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net40\any\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net40\any\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net40\win-x86\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net40\win-x86\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net45\any\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net45\any\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net45\win-x86\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\net45\win-x86\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\netcoreapp3.0\any\ef6.dll" />
+    <Content Include="packages\EntityFramework.6.3.0\tools\netcoreapp3.0\any\ef6.pdb" />
+    <Content Include="packages\SQLite.3.13.0\runtimes\win10-arm\nativeassets\uap10.0\sqlite3.dll" />
+    <Content Include="packages\SQLite.3.13.0\runtimes\win10-x64\nativeassets\uap10.0\sqlite3.dll" />
+    <Content Include="packages\SQLite.3.13.0\runtimes\win10-x86\nativeassets\uap10.0\sqlite3.dll" />
+    <Content Include="packages\SQLite.3.13.0\runtimes\win7-x64\native\sqlite3.dll" />
+    <Content Include="packages\SQLite.3.13.0\runtimes\win7-x86\native\sqlite3.dll" />
+    <Content Include="packages\SQLite.3.13.0\sqlite-version.txt" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\build\net20\x64\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\build\net20\x86\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\build\net40\x64\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\build\net40\x86\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\net20\System.Data.SQLite.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\net20\System.Data.SQLite.xml" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\net40\System.Data.SQLite.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\net40\System.Data.SQLite.xml" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\netstandard2.0\System.Data.SQLite.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\netstandard2.0\System.Data.SQLite.xml" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\netstandard2.1\System.Data.SQLite.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\lib\netstandard2.1\System.Data.SQLite.xml" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\linux-x64\native\netstandard2.0\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\linux-x64\native\netstandard2.1\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\osx-x64\native\netstandard2.0\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\osx-x64\native\netstandard2.1\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\win-x64\native\netstandard2.0\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\win-x64\native\netstandard2.1\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\win-x86\native\netstandard2.0\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.Core.1.0.112.2\runtimes\win-x86\native\netstandard2.1\SQLite.Interop.dll" />
+    <Content Include="packages\System.Data.SQLite.EF6.1.0.112.2\lib\net40\System.Data.SQLite.EF6.dll" />
+    <Content Include="packages\System.Data.SQLite.EF6.1.0.112.2\lib\netstandard2.1\System.Data.SQLite.EF6.dll" />
+    <Content Include="packages\System.Data.SQLite.Linq.1.0.112.2\lib\net20\System.Data.SQLite.Linq.dll" />
+    <Content Include="packages\System.Data.SQLite.Linq.1.0.112.2\lib\net40\System.Data.SQLite.Linq.dll" />
+    <Content Include="~Data\assets\audio\a.mp3" />
+    <Content Include="~Data\assets\audio\ba.mp3" />
+    <Content Include="~Data\assets\audio\be.mp3" />
+    <Content Include="~Data\assets\audio\bi.mp3" />
+    <Content Include="~Data\assets\audio\bo.mp3" />
+    <Content Include="~Data\assets\audio\bu.mp3" />
+    <Content Include="~Data\assets\audio\bya.mp3" />
+    <Content Include="~Data\assets\audio\byo.mp3" />
+    <Content Include="~Data\assets\audio\byu.mp3" />
+    <Content Include="~Data\assets\audio\cha.mp3" />
+    <Content Include="~Data\assets\audio\chi.mp3" />
+    <Content Include="~Data\assets\audio\cho.mp3" />
+    <Content Include="~Data\assets\audio\chu.mp3" />
+    <Content Include="~Data\assets\audio\da.mp3" />
+    <Content Include="~Data\assets\audio\de.mp3" />
+    <Content Include="~Data\assets\audio\do.mp3" />
+    <Content Include="~Data\assets\audio\dzu.mp3" />
+    <Content Include="~Data\assets\audio\e.mp3" />
+    <Content Include="~Data\assets\audio\fu.mp3" />
+    <Content Include="~Data\assets\audio\ga.mp3" />
+    <Content Include="~Data\assets\audio\gakusei.mp3" />
+    <Content Include="~Data\assets\audio\ge.mp3" />
+    <Content Include="~Data\assets\audio\gi.mp3" />
+    <Content Include="~Data\assets\audio\go.mp3" />
+    <Content Include="~Data\assets\audio\gu.mp3" />
+    <Content Include="~Data\assets\audio\gya.mp3" />
+    <Content Include="~Data\assets\audio\gyo.mp3" />
+    <Content Include="~Data\assets\audio\gyu.mp3" />
+    <Content Include="~Data\assets\audio\ha.mp3" />
+    <Content Include="~Data\assets\audio\he.mp3" />
+    <Content Include="~Data\assets\audio\hi.mp3" />
+    <Content Include="~Data\assets\audio\ho.mp3" />
+    <Content Include="~Data\assets\audio\hya.mp3" />
+    <Content Include="~Data\assets\audio\hyo.mp3" />
+    <Content Include="~Data\assets\audio\hyu.mp3" />
+    <Content Include="~Data\assets\audio\i.mp3" />
+    <Content Include="~Data\assets\audio\ji.mp3" />
+    <Content Include="~Data\assets\audio\jya.mp3" />
+    <Content Include="~Data\assets\audio\jyo.mp3" />
+    <Content Include="~Data\assets\audio\jyu.mp3" />
+    <Content Include="~Data\assets\audio\ka.mp3" />
+    <Content Include="~Data\assets\audio\kappu.mp3" />
+    <Content Include="~Data\assets\audio\ke.mp3" />
+    <Content Include="~Data\assets\audio\keiki.mp3" />
+    <Content Include="~Data\assets\audio\ki.mp3" />
+    <Content Include="~Data\assets\audio\ko.mp3" />
+    <Content Include="~Data\assets\audio\ku.mp3" />
+    <Content Include="~Data\assets\audio\kya.mp3" />
+    <Content Include="~Data\assets\audio\kyo.mp3" />
+    <Content Include="~Data\assets\audio\kyou.mp3" />
+    <Content Include="~Data\assets\audio\kyu.mp3" />
+    <Content Include="~Data\assets\audio\ma.mp3" />
+    <Content Include="~Data\assets\audio\me.mp3" />
+    <Content Include="~Data\assets\audio\meeru.mp3" />
+    <Content Include="~Data\assets\audio\mi.mp3" />
+    <Content Include="~Data\assets\audio\mo.mp3" />
+    <Content Include="~Data\assets\audio\mu.mp3" />
+    <Content Include="~Data\assets\audio\mya.mp3" />
+    <Content Include="~Data\assets\audio\myo.mp3" />
+    <Content Include="~Data\assets\audio\myu.mp3" />
+    <Content Include="~Data\assets\audio\n.mp3" />
+    <Content Include="~Data\assets\audio\na.mp3" />
+    <Content Include="~Data\assets\audio\ne.mp3" />
+    <Content Include="~Data\assets\audio\ni.mp3" />
+    <Content Include="~Data\assets\audio\no.mp3" />
+    <Content Include="~Data\assets\audio\nu.mp3" />
+    <Content Include="~Data\assets\audio\nya.mp3" />
+    <Content Include="~Data\assets\audio\nyo.mp3" />
+    <Content Include="~Data\assets\audio\nyu.mp3" />
+    <Content Include="~Data\assets\audio\o.mp3" />
+    <Content Include="~Data\assets\audio\ohayou.mp3" />
+    <Content Include="~Data\assets\audio\okaasan.mp3" />
+    <Content Include="~Data\assets\audio\pa.mp3" />
+    <Content Include="~Data\assets\audio\pe.mp3" />
+    <Content Include="~Data\assets\audio\pi.mp3" />
+    <Content Include="~Data\assets\audio\po.mp3" />
+    <Content Include="~Data\assets\audio\pu.mp3" />
+    <Content Include="~Data\assets\audio\pya.mp3" />
+    <Content Include="~Data\assets\audio\pyo.mp3" />
+    <Content Include="~Data\assets\audio\pyu.mp3" />
+    <Content Include="~Data\assets\audio\ra.mp3" />
+    <Content Include="~Data\assets\audio\re.mp3" />
+    <Content Include="~Data\assets\audio\ri.mp3" />
+    <Content Include="~Data\assets\audio\ro.mp3" />
+    <Content Include="~Data\assets\audio\ru.mp3" />
+    <Content Include="~Data\assets\audio\rya.mp3" />
+    <Content Include="~Data\assets\audio\ryo.mp3" />
+    <Content Include="~Data\assets\audio\ryu.mp3" />
+    <Content Include="~Data\assets\audio\sa.mp3" />
+    <Content Include="~Data\assets\audio\se.mp3" />
+    <Content Include="~Data\assets\audio\sensei.mp3" />
+    <Content Include="~Data\assets\audio\sha.mp3" />
+    <Content Include="~Data\assets\audio\shi.mp3" />
+    <Content Include="~Data\assets\audio\sho.mp3" />
+    <Content Include="~Data\assets\audio\shu.mp3" />
+    <Content Include="~Data\assets\audio\so.mp3" />
+    <Content Include="~Data\assets\audio\su.mp3" />
+    <Content Include="~Data\assets\audio\ta.mp3" />
+    <Content Include="~Data\assets\audio\te.mp3" />
+    <Content Include="~Data\assets\audio\to.mp3" />
+    <Content Include="~Data\assets\audio\tsu.mp3" />
+    <Content Include="~Data\assets\audio\tsua.mp3" />
+    <Content Include="~Data\assets\audio\u.mp3" />
+    <Content Include="~Data\assets\audio\wa.mp3" />
+    <Content Include="~Data\assets\audio\wo.mp3" />
+    <Content Include="~Data\assets\audio\ya.mp3" />
+    <Content Include="~Data\assets\audio\yo.mp3" />
+    <Content Include="~Data\assets\audio\yu.mp3" />
+    <Content Include="~Data\assets\audio\za.mp3" />
+    <Content Include="~Data\assets\audio\zasshi.mp3" />
+    <Content Include="~Data\assets\audio\ze.mp3" />
+    <Content Include="~Data\assets\audio\zo.mp3" />
+    <Content Include="~Data\assets\audio\zu.mp3" />
+    <Content Include="~Data\assets\images\hiragana\a.gif" />
+    <Content Include="~Data\assets\images\hiragana\chi.gif" />
+    <Content Include="~Data\assets\images\hiragana\e.gif" />
+    <Content Include="~Data\assets\images\hiragana\fu.gif" />
+    <Content Include="~Data\assets\images\hiragana\ha.gif" />
+    <Content Include="~Data\assets\images\hiragana\he.gif" />
+    <Content Include="~Data\assets\images\hiragana\hi.gif" />
+    <Content Include="~Data\assets\images\hiragana\ho.gif" />
+    <Content Include="~Data\assets\images\hiragana\i.gif" />
+    <Content Include="~Data\assets\images\hiragana\ka.gif" />
+    <Content Include="~Data\assets\images\hiragana\ke.gif" />
+    <Content Include="~Data\assets\images\hiragana\ki.gif" />
+    <Content Include="~Data\assets\images\hiragana\ko.gif" />
+    <Content Include="~Data\assets\images\hiragana\ku.gif" />
+    <Content Include="~Data\assets\images\hiragana\ma.gif" />
+    <Content Include="~Data\assets\images\hiragana\me.gif" />
+    <Content Include="~Data\assets\images\hiragana\mi.gif" />
+    <Content Include="~Data\assets\images\hiragana\mo.gif" />
+    <Content Include="~Data\assets\images\hiragana\mu.gif" />
+    <Content Include="~Data\assets\images\hiragana\n.gif" />
+    <Content Include="~Data\assets\images\hiragana\na.gif" />
+    <Content Include="~Data\assets\images\hiragana\ne.gif" />
+    <Content Include="~Data\assets\images\hiragana\ni.gif" />
+    <Content Include="~Data\assets\images\hiragana\no.gif" />
+    <Content Include="~Data\assets\images\hiragana\nu.gif" />
+    <Content Include="~Data\assets\images\hiragana\o.gif" />
+    <Content Include="~Data\assets\images\hiragana\ra.gif" />
+    <Content Include="~Data\assets\images\hiragana\re.gif" />
+    <Content Include="~Data\assets\images\hiragana\ri.gif" />
+    <Content Include="~Data\assets\images\hiragana\ro.gif" />
+    <Content Include="~Data\assets\images\hiragana\ru.gif" />
+    <Content Include="~Data\assets\images\hiragana\sa.gif" />
+    <Content Include="~Data\assets\images\hiragana\se.gif" />
+    <Content Include="~Data\assets\images\hiragana\shi.gif" />
+    <Content Include="~Data\assets\images\hiragana\so.gif" />
+    <Content Include="~Data\assets\images\hiragana\su.gif" />
+    <Content Include="~Data\assets\images\hiragana\ta.gif" />
+    <Content Include="~Data\assets\images\hiragana\te.gif" />
+    <Content Include="~Data\assets\images\hiragana\to.gif" />
+    <Content Include="~Data\assets\images\hiragana\tsu.gif" />
+    <Content Include="~Data\assets\images\hiragana\u.gif" />
+    <Content Include="~Data\assets\images\hiragana\wa.gif" />
+    <Content Include="~Data\assets\images\hiragana\wo.gif" />
+    <Content Include="~Data\assets\images\hiragana\ya.gif" />
+    <Content Include="~Data\assets\images\hiragana\yo.gif" />
+    <Content Include="~Data\assets\images\hiragana\yu.gif" />
+    <Content Include="~Data\assets\images\katakana\a.gif" />
+    <Content Include="~Data\assets\images\katakana\chi.gif" />
+    <Content Include="~Data\assets\images\katakana\e.gif" />
+    <Content Include="~Data\assets\images\katakana\fu.gif" />
+    <Content Include="~Data\assets\images\katakana\ha.gif" />
+    <Content Include="~Data\assets\images\katakana\he.gif" />
+    <Content Include="~Data\assets\images\katakana\hi.gif" />
+    <Content Include="~Data\assets\images\katakana\ho.gif" />
+    <Content Include="~Data\assets\images\katakana\i.gif" />
+    <Content Include="~Data\assets\images\katakana\ka.gif" />
+    <Content Include="~Data\assets\images\katakana\ke.gif" />
+    <Content Include="~Data\assets\images\katakana\ki.gif" />
+    <Content Include="~Data\assets\images\katakana\ko.gif" />
+    <Content Include="~Data\assets\images\katakana\ku.gif" />
+    <Content Include="~Data\assets\images\katakana\ma.gif" />
+    <Content Include="~Data\assets\images\katakana\me.gif" />
+    <Content Include="~Data\assets\images\katakana\mi.gif" />
+    <Content Include="~Data\assets\images\katakana\mo.gif" />
+    <Content Include="~Data\assets\images\katakana\mu.gif" />
+    <Content Include="~Data\assets\images\katakana\n.gif" />
+    <Content Include="~Data\assets\images\katakana\na.gif" />
+    <Content Include="~Data\assets\images\katakana\ne.gif" />
+    <Content Include="~Data\assets\images\katakana\ni.gif" />
+    <Content Include="~Data\assets\images\katakana\no.gif" />
+    <Content Include="~Data\assets\images\katakana\nu.gif" />
+    <Content Include="~Data\assets\images\katakana\o.gif" />
+    <Content Include="~Data\assets\images\katakana\ra.gif" />
+    <Content Include="~Data\assets\images\katakana\re.gif" />
+    <Content Include="~Data\assets\images\katakana\ri.gif" />
+    <Content Include="~Data\assets\images\katakana\ro.gif" />
+    <Content Include="~Data\assets\images\katakana\ru.gif" />
+    <Content Include="~Data\assets\images\katakana\sa.gif" />
+    <Content Include="~Data\assets\images\katakana\se.gif" />
+    <Content Include="~Data\assets\images\katakana\shi.gif" />
+    <Content Include="~Data\assets\images\katakana\so.gif" />
+    <Content Include="~Data\assets\images\katakana\su.gif" />
+    <Content Include="~Data\assets\images\katakana\ta.gif" />
+    <Content Include="~Data\assets\images\katakana\te.gif" />
+    <Content Include="~Data\assets\images\katakana\to.gif" />
+    <Content Include="~Data\assets\images\katakana\tsu.gif" />
+    <Content Include="~Data\assets\images\katakana\u.gif" />
+    <Content Include="~Data\assets\images\katakana\wa.gif" />
+    <Content Include="~Data\assets\images\katakana\wo.gif" />
+    <Content Include="~Data\assets\images\katakana\ya.gif" />
+    <Content Include="~Data\assets\images\katakana\yo.gif" />
+    <Content Include="~Data\assets\images\katakana\yu.gif" />
+    <Content Include="~Data\assets\images\play.png" />
+    <Content Include="~Data\assets\images\play_hover.png" />
+    <Content Include="~Data\assets\images\play_pressed.png" />
+    <Content Include="~Data\assets\images\x.png" />
+    <Content Include="~Data\assets\images\youtube-link.png" />
+    <Content Include="~Data\assets\scripts\exercises.css" />
+    <Content Include="~Data\assets\scripts\exercises.js" />
+    <Content Include="~Data\assets\scripts\jquery.js" />
+    <Content Include="~Data\assets\scripts\jquery.simplemodal-1.3.4.min.js" />
+    <Content Include="~Data\assets\scripts\script.js" />
+    <Content Include="~Data\assets\scripts\simplemodal.css" />
+    <Content Include="~Data\assets\scripts\styles.css" />
+    <Content Include="~Data\logo.png" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net20\x64\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net20\x86\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net40\x64\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net40\x86\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net451\x64\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net451\x86\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net45\x64\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\build\net45\x86\SQLite.Interop.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net20\System.Data.SQLite.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net20\System.Data.SQLite.xml" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net40\System.Data.SQLite.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net40\System.Data.SQLite.xml" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net451\System.Data.SQLite.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net451\System.Data.SQLite.xml" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net45\System.Data.SQLite.dll" />
+    <Content Include="~Data\System.Data.SQLite.Core.1.0.96.0\lib\net45\System.Data.SQLite.xml" />
     <None Include="Resources\ic_launcher.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

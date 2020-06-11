@@ -77,7 +77,7 @@
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(428, 249);
+            this.btn4.Location = new System.Drawing.Point(398, 247);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(115, 52);
             this.btn4.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(307, 249);
+            this.btn3.Location = new System.Drawing.Point(277, 247);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(115, 52);
             this.btn3.TabIndex = 3;
@@ -97,7 +97,7 @@
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(186, 249);
+            this.btn2.Location = new System.Drawing.Point(156, 247);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(115, 52);
             this.btn2.TabIndex = 2;
@@ -107,7 +107,7 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(65, 249);
+            this.btn1.Location = new System.Drawing.Point(35, 247);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(115, 52);
             this.btn1.TabIndex = 1;
@@ -118,7 +118,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(141, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(112, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 240);
             this.pictureBox1.TabIndex = 0;
@@ -139,8 +139,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 381);
-            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.kataBtn);
             this.Controls.Add(this.hiraBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
