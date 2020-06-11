@@ -74,40 +74,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main\AdminForm.cs">
+    <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\AdminForm.Designer.cs">
+    <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\LessonDBForm.cs">
+    <Compile Include="LessonDBForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\LessonDBForm.Designer.cs">
+    <Compile Include="LessonDBForm.Designer.cs">
       <DependentUpon>LessonDBForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\UserDBForm.cs">
+    <Compile Include="UserDBForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\UserDBForm.Designer.cs">
+    <Compile Include="UserDBForm.Designer.cs">
       <DependentUpon>UserDBForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\KanaForm.cs">
+    <Compile Include="KanaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\KanaForm.Designer.cs">
+    <Compile Include="KanaForm.Designer.cs">
       <DependentUpon>KanaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\LessonChooser.cs">
+    <Compile Include="LessonChooser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\LessonChooser.Designer.cs">
+    <Compile Include="LessonChooser.Designer.cs">
       <DependentUpon>LessonChooser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\PartForm.cs">
+    <Compile Include="PartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\PartForm.Designer.cs">
+    <Compile Include="PartForm.Designer.cs">
       <DependentUpon>PartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -115,51 +115,51 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Main\UserForm.cs">
+    <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\UserForm.Designer.cs">
+    <Compile Include="UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\LoginForm.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\LoginForm.Designer.cs">
+    <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\TitleForm.cs">
+    <Compile Include="TitleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\TitleForm.Designer.cs">
+    <Compile Include="TitleForm.Designer.cs">
       <DependentUpon>TitleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main\AdminForm.resx">
+    <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\LessonDBForm.resx">
+    <EmbeddedResource Include="LessonDBForm.resx">
       <DependentUpon>LessonDBForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\UserDBForm.resx">
+    <EmbeddedResource Include="UserDBForm.resx">
       <DependentUpon>UserDBForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\KanaForm.resx">
+    <EmbeddedResource Include="KanaForm.resx">
       <DependentUpon>KanaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\LessonChooser.resx">
+    <EmbeddedResource Include="LessonChooser.resx">
       <DependentUpon>LessonChooser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\LoginForm.resx">
+    <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\PartForm.resx">
+    <EmbeddedResource Include="PartForm.resx">
       <DependentUpon>PartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\TitleForm.resx">
+    <EmbeddedResource Include="TitleForm.resx">
       <DependentUpon>TitleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\UserForm.resx">
+    <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="auth.sqlite">
@@ -168,7 +168,7 @@
     <None Include="chapters.sqlite">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Main\packages.config" />
+    <None Include="packages.config" />
     <None Include="Resources\NotoSansJP-Regular.otf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,7 +181,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Main\App.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\hiragana\a.gif">
@@ -458,6 +458,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\katakana\yu.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\ic_launcher.ico" />

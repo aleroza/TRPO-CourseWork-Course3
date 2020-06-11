@@ -106,7 +106,7 @@
             this.kanaBtn.Name = "kanaBtn";
             this.kanaBtn.Size = new System.Drawing.Size(212, 33);
             this.kanaBtn.TabIndex = 1;
-            this.kanaBtn.Text = "Проверить знание Каны";
+            this.kanaBtn.Text = "Проверить знание каны";
             this.kanaBtn.UseVisualStyleBackColor = true;
             this.kanaBtn.Click += new System.EventHandler(this.kanaBtn_Click);
             // 
@@ -189,6 +189,7 @@
             this.Controls.Add(this.lessonBrowser);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserForm";
             this.Text = "Начальные уроки японского языка";

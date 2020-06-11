@@ -32,9 +32,9 @@
             this.backBtn = new System.Windows.Forms.Button();
             this.partStartBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.queTextLabel = new System.Windows.Forms.Label();
             this.queNumLabel = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,13 @@
             this.panel1.TabIndex = 6;
             this.panel1.Visible = false;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 80);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(266, 164);
+            this.flowLayoutPanel1.TabIndex = 7;
+            // 
             // queTextLabel
             // 
             this.queTextLabel.AutoEllipsis = true;
@@ -91,13 +98,6 @@
             this.queNumLabel.TabIndex = 0;
             this.queNumLabel.Text = "Вопрос";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 80);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(266, 164);
-            this.flowLayoutPanel1.TabIndex = 7;
-            // 
             // PartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,6 +106,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.partStartBtn);
             this.Controls.Add(this.backBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PartForm";
             this.Text = "Тест на частицы";

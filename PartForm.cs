@@ -21,6 +21,7 @@ namespace CP.Main
         private int counter = 0;
         private List<List<string>> newpart = new List<List<string>>();
         private List<List<string>> partQuiz = new List<List<string>>();
+        private List<string> partkana = new List<string>();
         private string mode = "part";
 
         public PartForm(SetResultDel sender)
@@ -39,6 +40,9 @@ namespace CP.Main
             panel1.Visible = true;
             partQuiz.Clear();
             newpart.Clear();
+            partkana.Clear();
+            flowLayoutPanel1.Controls.Clear();
+            GC.Collect();
             conn = new SQLiteConnection(string.Concat("Data Source=", filepath));
             conn.Open();
             string stm = "SELECT * FROM partquiz";
@@ -48,7 +52,9 @@ namespace CP.Main
             while (rdr.Read())
             {
                 partQuiz.Add(new List<string> { $"{rdr.GetString(0)}", $"{rdr.GetString(1)}" });
+                partkana.Add(rdr.GetString(0));
             }
+            conn.Close();
 
             int randnum;
             for (int i = 0; i < 3; i++)
@@ -57,10 +63,9 @@ namespace CP.Main
                 newpart.Add(partQuiz[randnum]);
                 partQuiz.RemoveAt(randnum);
             }
-            string[] partkana = { "は", "も", "が", "を", "に", "へ", "で", "と", "や", "とか", "の" };
-            partkana = partkana.OrderBy(x => rand.Next()).ToArray();
+            partkana = partkana.OrderBy(x => rand.Next()).ToList();
             int k = 0;
-            Button[] btn = new Button[partkana.Length];
+            Button[] btn = new Button[partkana.Count];
             foreach (string part in partkana)
             {
                 btn[k] = new Button();
@@ -142,14 +147,15 @@ namespace CP.Main
             pfc.AddMemoryFont(data, fontLength);
         }
 
-        private void PartForm_Load(object sender, EventArgs e)
-        {
-        }
 
         private void partStartBtn_Click(object sender, EventArgs e)
         {
-            InitCustomLabelFont();
             QuizLoad();
+        }
+
+        private void PartForm_Load(object sender, EventArgs e)
+        {
+            InitCustomLabelFont();
         }
     }
 }

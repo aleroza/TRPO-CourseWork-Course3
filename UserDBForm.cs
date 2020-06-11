@@ -28,6 +28,7 @@ namespace CP.Main
 
         private void LoadDB()
         {
+            GC.Collect();
             dt = new DataTable("auth");
             stm = "SELECT * FROM auth";
             conn = new SQLiteConnection(string.Concat("Data Source=", filepath));

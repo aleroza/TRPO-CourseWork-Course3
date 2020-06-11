@@ -72,6 +72,7 @@
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.lessonsdbBtn);
             this.Controls.Add(this.userdbBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminForm";
             this.Text = "Режим администрирования";

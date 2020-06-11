@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -13,6 +14,7 @@ namespace CP
 
         private void Start()
         {
+            pictureBox1.Image = Bitmap.FromFile("images/logo.png");
             Thread.Sleep(TimeSpan.FromSeconds(2));
             new LoginForm().Show();
             this.Hide();

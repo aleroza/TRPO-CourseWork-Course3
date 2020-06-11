@@ -25,6 +25,7 @@ namespace CP
 
         private void hiraBtn_Click(object sender, EventArgs e)
         {
+            GC.Collect();
             if (mode != null)
             {
                 DialogResult result = MessageBox.Show(

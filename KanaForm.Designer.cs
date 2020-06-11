@@ -44,7 +44,7 @@
             // 
             // hiraBtn
             // 
-            this.hiraBtn.Location = new System.Drawing.Point(172, 12);
+            this.hiraBtn.Location = new System.Drawing.Point(92, 12);
             this.hiraBtn.Name = "hiraBtn";
             this.hiraBtn.Size = new System.Drawing.Size(115, 52);
             this.hiraBtn.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // kataBtn
             // 
-            this.kataBtn.Location = new System.Drawing.Point(293, 12);
+            this.kataBtn.Location = new System.Drawing.Point(213, 12);
             this.kataBtn.Name = "kataBtn";
             this.kataBtn.Size = new System.Drawing.Size(115, 52);
             this.kataBtn.TabIndex = 1;
@@ -69,9 +69,9 @@
             this.panel1.Controls.Add(this.btn2);
             this.panel1.Controls.Add(this.btn1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(31, 70);
+            this.panel1.Location = new System.Drawing.Point(12, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(623, 368);
+            this.panel1.Size = new System.Drawing.Size(552, 305);
             this.panel1.TabIndex = 2;
             this.panel1.Visible = false;
             // 
@@ -126,7 +126,7 @@
             // 
             // backBtn
             // 
-            this.backBtn.Location = new System.Drawing.Point(673, 12);
+            this.backBtn.Location = new System.Drawing.Point(449, 12);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(115, 52);
             this.backBtn.TabIndex = 3;
@@ -138,11 +138,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(571, 381);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.kataBtn);
             this.Controls.Add(this.hiraBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KanaForm";
             this.Text = "Проверка на знание каны";

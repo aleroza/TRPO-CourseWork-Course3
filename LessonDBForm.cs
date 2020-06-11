@@ -56,6 +56,7 @@ namespace CP.Main
 
         private void LoadDB()
         {
+            GC.Collect();
             dt = new DataTable(mode);
             stm = $"SELECT * FROM {mode}";
             conn = new SQLiteConnection(string.Concat("Data Source=", filepath));
@@ -68,6 +69,7 @@ namespace CP.Main
                 texbox.Text = "";
             }
             textBox.Text = "";
+            idGrBox.ResetText();
         }
 
         private void updateBtn_Click(object sender, EventArgs e)

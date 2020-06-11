@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LessonDBForm));
             this.modePanel = new System.Windows.Forms.Panel();
-            this.groupsRadio = new System.Windows.Forms.RadioButton();
-            this.chaptersRadio = new System.Windows.Forms.RadioButton();
-            this.backBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
+            this.chaptersRadio = new System.Windows.Forms.RadioButton();
             this.insertBtn = new System.Windows.Forms.Button();
+            this.groupsRadio = new System.Windows.Forms.RadioButton();
             this.updateBtn = new System.Windows.Forms.Button();
             this.textBox = new System.Windows.Forms.RichTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -66,17 +66,25 @@
             this.modePanel.Size = new System.Drawing.Size(109, 252);
             this.modePanel.TabIndex = 0;
             // 
-            // groupsRadio
+            // deleteBtn
             // 
-            this.groupsRadio.AutoSize = true;
-            this.groupsRadio.Location = new System.Drawing.Point(24, 50);
-            this.groupsRadio.Name = "groupsRadio";
-            this.groupsRadio.Size = new System.Drawing.Size(57, 17);
-            this.groupsRadio.TabIndex = 1;
-            this.groupsRadio.TabStop = true;
-            this.groupsRadio.Text = "Главы";
-            this.groupsRadio.UseVisualStyleBackColor = true;
-            this.groupsRadio.CheckedChanged += new System.EventHandler(this.groupsRadio_CheckedChanged);
+            this.deleteBtn.Location = new System.Drawing.Point(3, 208);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(102, 41);
+            this.deleteBtn.TabIndex = 5;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
+            // backBtn
+            // 
+            this.backBtn.Location = new System.Drawing.Point(3, 3);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(102, 41);
+            this.backBtn.TabIndex = 0;
+            this.backBtn.Text = "Назад";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // chaptersRadio
             // 
@@ -90,26 +98,6 @@
             this.chaptersRadio.UseVisualStyleBackColor = true;
             this.chaptersRadio.CheckedChanged += new System.EventHandler(this.chaptersRadio_CheckedChanged);
             // 
-            // backBtn
-            // 
-            this.backBtn.Location = new System.Drawing.Point(3, 3);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(102, 41);
-            this.backBtn.TabIndex = 0;
-            this.backBtn.Text = "Назад";
-            this.backBtn.UseVisualStyleBackColor = true;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
-            // 
-            // deleteBtn
-            // 
-            this.deleteBtn.Location = new System.Drawing.Point(3, 208);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(102, 41);
-            this.deleteBtn.TabIndex = 5;
-            this.deleteBtn.Text = "Delete";
-            this.deleteBtn.UseVisualStyleBackColor = true;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
-            // 
             // insertBtn
             // 
             this.insertBtn.Location = new System.Drawing.Point(3, 161);
@@ -119,6 +107,18 @@
             this.insertBtn.Text = "Insert";
             this.insertBtn.UseVisualStyleBackColor = true;
             this.insertBtn.Click += new System.EventHandler(this.insertBtn_Click);
+            // 
+            // groupsRadio
+            // 
+            this.groupsRadio.AutoSize = true;
+            this.groupsRadio.Location = new System.Drawing.Point(24, 50);
+            this.groupsRadio.Name = "groupsRadio";
+            this.groupsRadio.Size = new System.Drawing.Size(57, 17);
+            this.groupsRadio.TabIndex = 1;
+            this.groupsRadio.TabStop = true;
+            this.groupsRadio.Text = "Главы";
+            this.groupsRadio.UseVisualStyleBackColor = true;
+            this.groupsRadio.CheckedChanged += new System.EventHandler(this.groupsRadio_CheckedChanged);
             // 
             // updateBtn
             // 
@@ -241,6 +241,7 @@
             this.ClientSize = new System.Drawing.Size(767, 351);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.modePanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LessonDBForm";
             this.Text = "База Данных уроков";
