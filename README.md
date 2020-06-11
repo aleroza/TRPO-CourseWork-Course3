@@ -10,3 +10,5 @@
 Основа DB SQLite, заставка и иконка "Learning Japanese" — https://play.google.com/store/apps/details?id=com.alexisblaze.japanese_grammar (googleplay@frush.com.au)
 
 *.gif-изображения каны — http://wikipedia.org/
+
+Admin — admin:admin
